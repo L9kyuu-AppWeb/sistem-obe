@@ -98,7 +98,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </div>
           <div class="form-group">
             <label for="id_dosen_pengembang_rps">Dosen Pengembang RPS</label>
-            <select name="id_dosen_pengembang_rps" id="id_dosen_pengembang_rps" class="form-control">
+            <select name="id_dosen_pengembang_rps" id="id_dosen_pengembang_rps" class="form-control select2">
               <option value="">-- Pilih Dosen --</option>
               <?php foreach ($dataDosen as $dosen): ?>
                 <?php 
@@ -113,7 +113,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </div>
           <div class="form-group">
             <label for="id_dosen_ketua_program_studi">Dosen Ketua Program Studi</label>
-            <select name="id_dosen_ketua_program_studi" id="id_dosen_ketua_program_studi" class="form-control" required>
+            <select name="id_dosen_ketua_program_studi" id="id_dosen_ketua_program_studi" class="form-control select2" required>
               <option value="">-- Pilih Dosen --</option>
               <?php foreach ($dataDosen as $dosen): ?>
                 <?php 

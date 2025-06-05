@@ -49,7 +49,10 @@ if (in_array($page, $static_pages)) {
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sistem Obe</title>
-
+    <link rel="icon" type="image/x-icon" href="dist/img/favicon.ico">
+    <!-- Select2 -->
+    <link rel="stylesheet" href="plugins/select2/css/select2.min.css">
+    <link rel="stylesheet" href="plugins/select2-bootstrap4-theme/select2-bootstrap4.min.css">
     <!-- Style -->
     <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
     <link rel="stylesheet" href="dist/css/adminlte.min.css" />
@@ -77,8 +80,16 @@ if (in_array($page, $static_pages)) {
     <script src="plugins/jquery/jquery.min.js"></script>
     <!-- Bootstrap 4 -->
     <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Select2 -->
+    <script src="plugins/select2/js/select2.full.min.js"></script>
     <!-- AdminLTE App -->
     <script src="dist/js/adminlte.min.js"></script>
+    <script>
+        $(function() {
+            //Initialize Select2 Elements
+            $('.select2').select2()
+        });
+    </script>
 </body>
 
 </html>

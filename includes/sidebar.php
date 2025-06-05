@@ -25,14 +25,65 @@ function isMenuOpen($menuName, $currentPage)
 
     <div class="sidebar">
         <!-- User Info -->
-        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <!-- <div class="user-panel mt-3 pb-3 mb-3 d-flex">
             <div class="image">
                 <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
                 <a href="#" class="d-block"><?= $role ?></a>
             </div>
+        </div> -->
+
+        <?php
+        $nama = "Nine";
+        $keterangan = "Administrator";
+        ?>
+
+        <style>
+            /* Gambar besar dan teks putih saat sidebar penuh */
+            .custom-user-panel .user-img {
+                width: 160px;
+                height: 160px;
+                object-fit: cover;
+            }
+
+            .custom-user-panel .user-name {
+                font-size: 1.1rem;
+                color: #fff;
+            }
+
+            .custom-user-panel .user-role {
+                font-size: 0.85rem;
+                color: #fff;
+            }
+
+            /* Ketika sidebar diminimalkan, sembunyikan teks dan kecilkan gambar */
+            .sidebar-mini.sidebar-collapse .custom-user-panel {
+                align-items: center;
+                padding: 0 !important;
+            }
+
+            .sidebar-mini.sidebar-collapse .custom-user-panel .user-img {
+                width: 35px;
+                height: 35px;
+            }
+
+            .sidebar-mini.sidebar-collapse .custom-user-panel .info {
+                display: none;
+            }
+        </style>
+
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex flex-column align-items-center text-center custom-user-panel">
+            <div class="image">
+                <img src="dist/img/user2-160x160.png" class="img-circle elevation-2 user-img" alt="User Image">
+            </div>
+            <div class="info mt-2 text-white">
+                <div class="fw-bold user-name"><?= $nama ?></div>
+                <div class="user-role"><?= $keterangan ?></div>
+            </div>
         </div>
+
+
 
         <!-- Sidebar Menu -->
         <nav class="mt-2">

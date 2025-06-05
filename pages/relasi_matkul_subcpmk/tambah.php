@@ -67,8 +67,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             <form method="POST" action="">
                 <div class="card-body">
                     <div class="form-group">
-                        <label for="id_matakuliah">Pilih Matakuliah</label>
-                        <select name="id_matakuliah" id="id_matakuliah" class="form-control" required>
+                        <label for="id_matakuliah">Pilih Matakuliah</label>                        
+                        <select name="id_matakuliah" id="id_matakuliah" class="form-control select2" required>
                             <option value="">-- Pilih Matakuliah --</option>
                             <?php foreach ($matakuliahs as $m) : ?>
                                 <option value="<?= htmlspecialchars($m['id_matakuliah']) ?>">
